@@ -1,48 +1,60 @@
 import { FaGithub, FaLinkedin, FaDownload } from "react-icons/fa";
+import "./Hero.css"
 
 function Hero() {
   return (
     <section
       id="home"
-      className="bg-dark text-white d-flex align-items-center"
-      style={{ minHeight: "100vh" }}
+      className="hero-section bg-dark text-white d-flex align-items-center"
     >
       <div className="container">
-        <div className="row align-items-center">
+        <div className="row align-items-center gy-5">
+
           {/* Left Side */}
-          <div className="col-lg-6">
-            <h5 className="text-info mb-3">👋 Hello, I'm</h5>
+          <div className="col-lg-6 text-center text-lg-start">
 
-            <h1 className="display-3 fw-bold">Sourabh Setia</h1>
 
-            <h2 className="text-info my-3">MERN Stack Developer</h2>
+            <h1 className="hero-title fw-bold mb-3">
+              Sourabh Setia
+            </h1>
 
-            <p className="lead text-light">
-              Passionate Software Developer with experience in building scalable
-              web applications using React.js, Node.js, Express.js and MongoDB.
+            <h2 className="hero-subtitle text-info mb-4">
+              MERN Stack Developer
+            </h2>
+
+            <p className="hero-text text-light mb-4">
+              Passionate Software Developer with experience building scalable
+              web applications using React.js, Node.js, Express.js and
+              MongoDB.
             </p>
 
-            <div className="mt-4">
-              <a href="#projects" className="btn btn-info btn-lg me-3">
+            <div className="d-flex flex-column flex-sm-row gap-3 justify-content-center justify-content-lg-start">
+
+              <a
+                href="#projects"
+                className="btn btn-info btn-lg px-4"
+              >
                 View Projects
               </a>
 
               <a
                 href="/resume.pdf"
                 download="Sourabh_Setia_Resume.pdf"
-                className="btn btn-outline-light btn-lg"
+                className="btn btn-outline-light btn-lg px-4"
               >
                 <FaDownload className="me-2" />
                 Resume
               </a>
+
             </div>
 
-            <div className="mt-5">
+            <div className="d-flex justify-content-center justify-content-lg-start mt-4 gap-4">
+
               <a
                 href="https://linkedin.com/in/sourabhhsetia"
                 target="_blank"
                 rel="noreferrer"
-                className="text-white fs-2 me-4"
+                className="social-icon"
               >
                 <FaLinkedin />
               </a>
@@ -51,28 +63,27 @@ function Hero() {
                 href="https://github.com/sourabh-setia"
                 target="_blank"
                 rel="noreferrer"
-                className="text-white fs-2"
+                className="social-icon"
               >
                 <FaGithub />
               </a>
+
             </div>
+
           </div>
 
           {/* Right Side */}
 
-          <div className="col-lg-6 text-center mt-5 mt-lg-0">
+          <div className="col-lg-6 text-center">
+
             <img
               src="/Img.jpeg"
-              alt="Profile"
-              className="img-fluid rounded-circle shadow-lg"
-              style={{
-                width: "350px",
-                height: "350px",
-                objectFit: "contain",
-                border: "5px solid #0dcaf0",
-              }}
+              alt="Sourabh Setia"
+              className="hero-image img-fluid rounded-circle shadow-lg"
             />
+
           </div>
+
         </div>
       </div>
     </section>
