@@ -38,7 +38,7 @@ function Hero() {
               </a>
 
               <a
-                href="/resume.pdf"
+                href="/Sourabh_Setia_Resume.pdf"
                 download="Sourabh_Setia_Resume.pdf"
                 className="btn btn-outline-light btn-lg px-4"
               >
